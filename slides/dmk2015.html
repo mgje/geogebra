@@ -376,7 +376,27 @@ Q = (x(Mg), g(x(Mg)))
 </video>
 
 
+---
+### 2. Lösung nur im CAS-Fenster
 
+[Link GeoGebraTube](http://tube.geogebra.org/material/show/id/1997437)
+
+CAS-Fenster
+
+```apache
+a0 := 4.51
+
+f(x, a) := -a x^3 + (a + 1) x^2
+
+g(x) := f(x,a0)
+
+Liste1 := Löse[g'(x)=0]
+
+Mg := Element[Liste1, 2]
+
+MP := Schneide[Mg, g]
+
+```
 
 
 ---
@@ -569,9 +589,6 @@ f=Folge[(1/i) sin(x i),i,1,N]
 
 ---
 # Dessert
-
----
-
 
 ---
 # Vektorgeometrie
