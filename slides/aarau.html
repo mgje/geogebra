@@ -59,21 +59,6 @@
 #####  Martin Guggisberg  
 
 
-<p>
-<div style="float:left">
-![Torsten](media/Torsten-Linnemann.jpg)
-</div>
-<div style="text-align:left">
-&nbsp;Torsten Linnemann<br>
-&nbsp;PH FHNW<br>
-&nbsp;Deutschschweizerische Mathematikkommission<br>
-
-&nbsp;Gymnasium Oberwil<br> 
-&nbsp;tolinnemann@gmail.com<br>
-</div>
-</p>
-
-
 
 <p>
 <div style="float:left">
@@ -143,10 +128,10 @@
   - Darstellungen in Schrägbildern<!-- .element: class="fragment" data-fragment-index="3" -->
 
 - Teil III (ca. 45 Min)
-  -  selber ausprobieren <!-- .element: class="fragment" data-fragment-index="3" -->
+  -  selber ausprobieren <!-- .element: class="fragment" data-fragment-index="4" -->
 
 
-  - Für Interessierte: Streifzug durch Themen, die für Viertiefungsfächer interessant sind (komplexe Zahlen, Matrizen, DGL<!-- .element: class="fragment" data-fragment-index="4" -->
+  - Für Interessierte: Streifzug durch Themen, die für Viertiefungsfächer interessant sind (komplexe Zahlen, Matrizen, DGL<!-- .element: class="fragment" data-fragment-index="5" -->
 
 
 
@@ -184,8 +169,11 @@ http://mgje.github.io/geogebra/slides/aarau.html
 
 ## Möglicher Schuleinsatz
 - Demonstrationsmaterialien für Lehrkraft<!-- .element: class="fragment" data-fragment-index="1" -->
+
 - Erstellen von Bildern, Diagrammen für Lehrkraft<!-- .element: class="fragment" data-fragment-index="2" -->
+
 - Nutzen von Geogebratube durch Lernende<!-- .element: class="fragment" data-fragment-index="3" -->
+
 - Allenfalls Nutzen des Programms durch Lernende<!-- .element: class="fragment" data-fragment-index="4" -->
 
 
@@ -209,7 +197,7 @@ Lernvideos: [YouTube GeoGebra channel](https://www.youtube.com/watch?v=m_v9hKFlO
 
 
 
-### Lineare Funktionen
+## Lineare Funktionen
 
 
 
@@ -285,17 +273,15 @@ Ober- und Untersumme[B1](http://tube.geogebra.org/material/show/id/101) [B2](htt
 
 ![PunktSymmetrie](media/punktsymm.png)
 
-
 [Link auf GeoGebraTube](https://tube.geogebra.org/material/simple/id/117646)
 
 
- 
+
 ### Spiegelungen an x- und y-Achse
 
-$$ f(x) = \sqrt{x} $$
-$$ g(x) = f(-x) $$
-$$ h(x) = -f(x) $$
-$$ j(x) = -f(-x) $$
+$  g(x) = f(-x) \;\;\;\;\;\;\;\;\;\;\;\;\;\;  f(x) = \sqrt{x}$
+
+$ j(x) = -f(-x) \;\;\;\;\;\;\;\;\,\,\;\; h(x) = -f(x)$
 
 ![sym](media/symwurz.png)
 
@@ -303,11 +289,8 @@ $$ j(x) = -f(-x) $$
 
 
 
-TODO
-Verschiebung, Dehnung, Stauchung, Streckung von Funktionsgraphen
-
-
 ### Parametrisierung einer Funktion
+#### Verschiebung, Dehnung, Stauchung, Streckung von Funktionsgraphen
 
 ![sinpara](media/sinpara.png)
 
@@ -315,8 +298,28 @@ Verschiebung, Dehnung, Stauchung, Streckung von Funktionsgraphen
 
 
 
-### Themen zur Geometrie: Strahlensätze, Zentrische Streckung, Ähnlichkeit, Konstruktionsaufgaben
+### Generalisierung
 
+#### Verschiebung, Dehnung, Stauchung, Streckung
+
+<br>
+<br>
+
+$\mbox{Verschiebung: }\;\;\;\;  g(x) = f(x+x_0)+y_0 \;\;\mbox{ mit } x_0,y_0\in \mathbb{R}$
+
+<br>
+$\mbox{Dehnung, Stauchung, Streckung: }\;\;\;\;  h(x) = \omega \cdot f(k \cdot x) \;\;\mbox{ mit } \omega,k\in \mathbb{R}$
+
+
+
+![verschiebung_streckung](media/verschiebung_streckung_stauchung.png)
+
+[Link auf GeoGebraTube](http://tube.geogebra.org/m/2972755)
+
+
+
+### Themen zur Geometrie: Strahlensätze, Zentrische Streckung, Ähnlichkeit
+TODO Torsten
 
 
 ### Epsilon-Delta-Problematik
@@ -411,7 +414,15 @@ f=Folge[(1/i) sin(x i),i,1,N]
 [Artikel im GDM2015 Band](media/Forschendes_Lernen_optimierung.pdf)
 
 
--------
+
+# Pause
+
+# Teil II
+
+## Arbeiten mit CAS
+
+
+
 ### Finde ausgezeichnete Punkte einer Funktionsschar
 
 \\( p(x) = a \cdot x^5-x^4+b \cdot x^3-b \cdot x^2+x \\)
@@ -437,6 +448,7 @@ Für den Fall: $a= \frac{1}{10}$ und $b=3$
 
 
 
+## Steckbriefaufgabe
 ### Finde eine Funktion $f(x)$ dritten Grades mit den Eigenschaften:
 
 * $f(x)$ geht durch die Punkte $(-1,1)$ und $(1,-1)$
@@ -473,60 +485,15 @@ g(x):=Ersetze[$1,$6]
 [CAS im Browser](http://tube.geogebra.org/material/show/id/919901)
 
 
-
+### CAS im Einasatz
 ## Funktionen mit Parameter 
-## (Maturaufgabe Oberwil 2014)
+## (Am Beispiel einer Maturaufgabe Oberwil 2014)
 
 ![maturaufgabe_oberwil](media/maturaufgabe_oberwil.png)
 
 
 
-Im Eingabe-Fenster
-
-```apache
-
-f(x, a) = -a x^3 + (a + 1) x^2
-
-g(x) = f(x, a)
-
-P = (1, 1)
-
-```
-
-Im CAS-Fenster
-
-```apache
-
-f(1,a)
-
-Liste1:=Löse[g'(x) = 0]
-
-Löse[Ableitung[f(x, b),x]=0,b]
-
-```
-
-Im Eingabe-Fenster
-
-```apache
-Mg = Element[Liste1, 2]
-
-Q = (x(Mg), g(x(Mg)))
-
-```
-
-
-
-[Link GeoGebraTube](http://tube.geogebra.org/student/m765169)
-
-<video width="1030" height="572" data-autoplay loop controls>
-        <source data-src="media/movies/maturaOberwil.m4v" type="video/mp4" />
-        <source data-src="media/movies/maturaOberwil.webm" type="video/webm" />
-        Your browser does not support the <code>video</code> element.
-</video>
-
-
-
-### 2. Lösung nur im CAS-Fenster
+### Lösung mit CAS
 
 [Link GeoGebraTube](http://tube.geogebra.org/material/show/id/1997437)
 
@@ -548,6 +515,25 @@ MP := Schneide[Mg, g]
 ```
 
 
+
+### Parameterform der Ebenengleichung
+TODO
+
+
+### Darstellungen in Schrägbildern
+TODO
+
+
+
+# Komplexe Zahlen 
+
+
+
+# Matrizen 
+
+
+
+# DGL
 
 # Modellierung dynamischer Systeme 
 
