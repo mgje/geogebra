@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+
+  <head>
+    <meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>GeoGebra</title>
+
+    <meta name="description" content="GeoGebra Materials">
+    <meta name="author" content="Martin Guggisberg">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- change to https -->
+    <script>
+      if (window.location.host.indexOf('github.io') > -1 && window.location.protocol != "https:"){
+          window.location.protocol = "https";
+      }
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/reveal.min.css">
+    <link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/theme/mw2.css" id="theme">
+
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/lib/css/zenburn.css">
+
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="https://mgje.github.io/presentations/reveal2015/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+        
+<!-- Einleitung -->
+<section data-markdown data-separator="---" data-separator-vertical="--" data-background="#FFFFFF">
+<script type="text/template">
+### Fortbildung GeoGebra Kurs I
+<br>
+<p style="background-color:#81BABE">
+![banner](media/banner-geogebra.png)
+</p>
+<br>
+####Berufsfachschule Muttenz 01.02.2017
+
+
+<br>
+##### Torsten Linnemann & Martin Guggisberg <br>
+
+
+
+---
+## Geogebra Institute 
+
+### PH FHNW Schweiz
+
+[https://www.geogebra.org/institutes](https://www.geogebra.org/institutes)
+
+
+![media/institutes.png](media/institutes.png)
+
+---
+
+## Vorstellung; Motivation; Erwartungen
+
+---
+
+## Kursorganisation
+
+- K1 Einführung in Geogebra: Geometrie und Algebra, Bedienung des Programms
+
+- **K2 Computeralgebrasystem, GeoGebra Materialien, typische Anwendungen für den BM-Unterricht**
+
+- K3 3D-Geogebra (3D-Graphiken), Tabellenkalkulation (Datenanalyse)
+
+
+
+
+---
+## Agenda Kurs 2
+
+- Computeralgebrasystem
+- GeoGebra Materialien
+  - eigenständiges Arbeiten
+- typische Anwendungen für den BM-Unterricht
+- Bonustrack: 
+	- Erstellung einer Animation
+
+
+---
+
+## Computeralgebrasystem
+
+---
+
+## GeoGebra Materialien
+
+---
+
+## typische Anwendungen für den BM-Unterricht
+
+---
+
+## Erstellung einer Animation
+
+
+
+
+
+</script>
+</section>
+
+
+
+<!-- THE END -->
+      </div>
+
+    </div>
+
+    <script src="https://mgje.github.io/presentations/reveal2015/lib/js/head.min.js"></script>
+    <script src="https://mgje.github.io/presentations/reveal2015/js/reveal.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        keyboard: true,
+        overview: true,
+        slideNumber: true,
+
+        //width: 1024,
+          //height: 768,
+
+          width: 1440,
+          height: 900,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        //parallaxBackgroundSize: '2100px 900px',
+        parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal
+        dependencies: [
+          { src: 'https://mgje.github.io/presentations/reveal2015/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://mgje.github.io/presentations/reveal2015/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://mgje.github.io/presentations/reveal2015/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://mgje.github.io/presentations/reveal2015/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'https://mgje.github.io/presentations/reveal2015/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'https://mgje.github.io/presentations/reveal2015/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'https://mgje.github.io/presentations/reveal2015/plugin/math/math.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
