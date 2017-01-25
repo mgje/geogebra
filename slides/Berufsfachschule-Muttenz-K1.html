@@ -166,14 +166,20 @@
 
 ## Einführung Geometrie
 
-Punkt, Strecke, Strahl, Gerade, Schnittpunkt, normale Gerade,
-Kreis, Rechteck, Winkel, Abstand
+- **Punkt** 
+- **Strecke** 
+- **Strahl** 
+- **Schnittpunkt** 
+- **normale Gerade**
+- analog: Gerade, Kreis, Rechteck, Winkel, Abstand
 
 
 [http://static.geogebra.org/help/geogebraquickstart_de.pdf](http://static.geogebra.org/help/geogebraquickstart_de.pdf)
 
 
 ---
+
+## Punkt
 
 Ein Punkt lässt sich durch Eingabe der Koordinaten oder durch das ziehen des Punktes (Punkt-Werkzeug) auf die Arbeitsfläche definieren.
 
@@ -182,19 +188,30 @@ Alle definierten Objekte werden im Fenster Algebra aufgelistet
 ![](media/punkt.png)
 
 ---
+## Strecke
 
-Eine Strecke ist eindeutig durch zwei Punkte definiert.
+Eine Strecke ist eindeutig durch zwei Punkte definiert.
+
 Definition mit Hilfe des Strecken-Werkzeugs
-Zweite Möglichkeit: direkt durch die Eingabe zweier Punkte, mit welchen sich eine Strecke definieren lässt. Eingabe: (2,2) Eingabe: (3,3)Eingabe: Strecke[A,B]
+oder direkt durch die Eingabe zweier Punkte
+
+Eingabe: **(2,2)**,
+Eingabe:**(3,3)**,
+Eingabe: **Strecke[A,B]**
 
 
 ![](media/strecke.png)
 
 ---
+## Halbgerade, Strahl
 
-Eine Halbgerade lässt sich eindeutig durch zwei Punkte definieren.
 Definition mit Hilfe des Strahl-Werkzeugs
-Zweite Möglichkeit: direkt durch die Eingabe zweier Punkte, mit welchen sich eine Halbgerade definieren lässt. Eingabe: (2,2) Eingabe: (3,3)Eingabe: Strahl[A,B]
+
+Zweite Möglichkeit: direkt durch die Eingabe zweier Punkte, mit welchen sich eine Halbgerade definieren lässt. 
+
+Eingabe: **(2,2)**, 
+Eingabe: **(3,3)**, 
+Eingabe: **Strahl[A,B]**
 
 
 
@@ -202,22 +219,41 @@ Zweite Möglichkeit: direkt durch die Eingabe zweier Punkte, mit welchen sich ei
 
 ---
 
-Eine Halbgerade lässt sich eindeutig durch einen Punkt und eine Richtung definieren.
-Dritte Möglichkeit: direkt durch die Eingabe eines Punkts und eines Richtungsvektors. Eingabe: (1,2) Eingabe: Vektor[(1, 1)]Eingabe: Strahl[A,u]
-Bei der Eingabe von Punkten beginnt die Namensgebung bei A,B,C, usw.
-Bei der Eingabe von Vektoren beginnt die Namensgebung bei u,v,w, usw.
+## Halbgerade II
+
+Eine Halbgerade lässt sich eindeutig durch einen Punkt und eine Richtung definieren.
+
+
+
+Dritte Möglichkeit:
+Eingabe: **(1,2)**,
+Eingabe: **Vektor[(1, 1)]**,
+Eingabe: **Strahl[A,u]**
+
+
 
 
 
 ![](media/halbgerade2.png)
 
+<small>
+
+Bei der Eingabe von Punkten beginnt die Namensgebung bei A,B,C, usw.
+Bei der Eingabe von Vektoren beginnt die Namensgebung bei u,v,w, usw.
+</small>
+
+
 ---
 
-Schneiden sich zwei geometrische Objekte (z.B. eine Gerade mit einem Kreis) wird dadurch ein Punkt (Schnittpunkt) definiert.
-Ein Schnittpunkt kann mit Hilfe des Schneide-Werkzeugs oder der Eingabe Schneide[a,c] definiert werden. 
-Eingabe: Gerade[(-3,0),(3,3)]
-Eingabe: Kreis[(0, 0), 2.5]
-Eingabe: Schneide[a,c]
+## Schnittpunkt
+
+Schneiden sich zwei geometrische Objekte (z.B. eine Gerade mit einem Kreis) werden dadurch Schnittpunkte definiert.
+
+Ein Schnittpunkt kann mit Hilfe des Schneide-Werkzeugs oder der Eingabe **Schneide[a,c]** erzeugt werden. 
+
+Eingabe: **Gerade[(-3,0),(3,3)]**,
+Eingabe: **Kreis[(0, 0), 2.5]**,
+Eingabe: **Schneide[a,c]**
 
 
 ![](media/schnittpunkt.png)
@@ -225,54 +261,78 @@ Eingabe: Schneide[a,c]
 
 ---
 
-Eine Gerade a geht durch die Punkte (0,4)und (5,0). 
-Finden Sie den Punkt A auf der Gerademit der x-Koordinate x=3.
-Eingabe:  Gerade[(0, 4), (5, 0)]
-Eingabe: (3, a(3))
+#Punkt auf einer Geraden
 
-oder das Punkt auf Objekt-Werkzeug verwenden.
+Eine Gerade a geht durch die Punkte (0,4) und (5,0). 
+Finden Sie den Punkt A auf der Gerade mit der x-Koordinate x=3.
 
+Eingabe:  **Gerade[(0, 4), (5, 0)]**,
+Eingabe: **(3, a(3))**
 
 
 ![](media/punktaufobjekt.png)
 
 
 ---
-Eine Gerade a geht durch die Punkte( -4, 0) und (4, 5). Gesucht ist eine normale Gerade die durch den Punkt ( 2, 2) und die Gerade a geht.
+Eine Gerade a geht durch die Punkte( -4, 0) und (4, 4). Gesucht ist eine normale Gerade die durch den Punkt ( 2, 2) verläuft.
 
-Eingabe: Gerade[(-4, 0), (4, 4)]
-Eingabe: (2,2)
-Input: Senkrechte[A, a]
+Eingabe: **Gerade[(-4, 0), (4, 4)]**,
+Eingabe: **(2,2)**,
+Input: **Senkrechte[A, a]**
 
 
 ![](media/normale.png)
 
 ---
 
-3 Aufträge:
+## Aufträge:
 
+
+1. Erstellen Sie ein beliebiges Dreieck mit Inn und Umkreis
+1. Konstruieren Sie den Schwerpunkt eines von Ihnen gewählten Dreiecks
+1.Wählen Sie einen Kreis, konstruieren Sie ein regelmässiges 6-,12-,24-Eck innerhalb des gewählten Kreises
+1.Starten Sie mit 3 beliebigen Punkten A,B,C . Gesucht sind nun weitere Punkte, welche von A,B,C den gleichen Abstand haben.
+
+---
+## Verknüpfung Algebra und Geometrie
+
+- Punkte werden im Algebra-Fenster durch Koordinaten repräsentiert
+- Geraden durch Geradengleichungen
+- Krumme Kurven durch Kegelschnitte (quadratische Ordnung)
+- Funktionen einer Variablen werden als Graph im Grafik-Fenster dargestellt.
+
+---
+## Das Zusammenspiel zwischen Algebra-Fenster und Grafik bietet die Möglichkeit
+
+- Funktionen zu Erforschen
+- Mit Kreisen als algebraische Objekte zu Arbeiten
+- Orte mit Abstandseigenschaften zu Finden
 
 ---
 
-Erstellen Sie ein beliebiges Dreieck mit Inn und Umkreis
+Funktionen verknüpfen
 
 ---
 
-Konstruieren Sie den Schwerpunkt eines Dreiecks
-
-Konstruieren Sie den Schwerpunkt eines n-Ecks
+Funktionen Zoomen
 
 ---
 
-Zeichnen Sie alle Orte, welche von 2 Punkten  einen Totalen Abstand d haben
+Quadratische Funktionen Erforschen
 
 ---
 
+Orte Kurven Finden
+
+
+
+
+---
+1.Wählen Sie zwei beliebige Punkte A,B. Gesucht sind nun alle Punkte deren Abstandssumme zu A und B konstant ist z.B. c
 
 ---
 
-
----
+sqrt((x - x(A))² + (y - y(A))²) + sqrt((x - x(B))² + (y - y(B))²) = c
 
 ---
 
