@@ -143,6 +143,27 @@ Löse[{3x-2y+4z=3,2x-y+6z=2,4x+2y-2z=13},{x,y,z}]
 ![](media/cas_parameter.png)
 
 ---
+
+## Geometrische Aufgaben algebraisch lösen
+
+Wählen Sie zwei Punkte. Finden Sie alle Punkte, die vom ersten Punkt doppelt so weit entfernt sind wie vom zweiten Punkt.
+
+Sei $A = (x_A,y_A)$
+
+Sei $B = (x_B,y_B)$
+
+Gesucht alle Punkte $P = (x,y)$ mit 
+
+$ \overline{AP} = 2 \cdot \overline{BP} $
+
+
+$ (x_A-x)^2 + (y_A -y)^2 = 4 \cdot ((x_B-x)^2+(y_B-y)^2)$
+
+
+[Lösung mit CAS](https://www.geogebra.org/m/NfVBJzd4)
+ 
+
+---
 ## Aufträge: 
 
 1. Bestimmen Sie die Primfaktoren von $2 ^ {63} -1$
@@ -199,12 +220,24 @@ x &-& 3y &-& 2z &=& 5\\\\
 
 
 ---
-![YouTube](media/youtube.png)
+## Materialien herunterladen
 
-Lernvideos: [YouTube GeoGebra channel](https://www.youtube.com/watch?v=m_v9hKFlOpw) 
+![](media/download_mat.png)
 
 ---
-# Geogebra Materialien
+## Materialien hoch laden 
+
+nötig: 
+- Konto bei GeoGebra
+- Verbindung zum Internet
+
+![](media/geo_hoch.png)
+
+---
+![](media/geo_web.png)
+
+---
+# Materialien erproben
 
 GeoGebra Anwendungen selbständig erproben und weitere Beispiele in GeoGebra Materialien finden.
 
@@ -370,6 +403,167 @@ https://tube.geogebra.org/student/m4718
 - [Standfestigkeit](https://www.geogebra.org/m/kMQxJ4Wp)
 
 - [Schwerpunkt eines bel 4-Eck mit Vektoren](https://www.geogebra.org/m/KgzSk2NS)
+
+---
+
+### Physik und GeoGebra
+
+### Wachtumsmodelle
+
+[https://tube.geogebra.org/material/show/id/31166](https://tube.geogebra.org/material/show/id/31166)
+
+
+![Wachstumsmodelle](media/Wachstumsmodelle.png)
+---
+
+### Laden eines Kondesators
+
+[https://tube.geogebra.org/material/show/id/446087](https://tube.geogebra.org/material/show/id/446087)
+
+![laden_kondensator](media/laden_kondensator.png)
+---
+
+### Numerisches Lösen von DG erster Ordnung
+### in einem 2D-Richtungsfeld
+
+
+
+```apache
+A = (1, 1)
+
+f(x, y) = sin(x) cos(y)
+
+Richtungsfeld[f]
+
+LöseDgl[f, x(A), y(A), 20, 0.1]
+
+```
+
+---
+
+### Numerisches Lösen von DG erster Ordnung
+### in einem 2D-Richtungsfeld
+
+<video width="954" height="690" data-autoplay controls>
+        <source data-src="media/movies/Richtungsfeld.m4v" type="video/mp4" />
+        <source data-src="media/movies/Richtungsfeld.webm" type="video/webm" />
+        Your browser does not support the <code>video</code> element.
+</video>
+
+---
+
+## DGL 2. Ordnung
+
+<br>
+
+### Schwingung
+
+--
+
+### Newton II
+
+### &nbsp;
+
+\\(  \vec{F}(t) = m \cdot \vec{a}(t) \\)
+
+### &nbsp;
+
+
+### Federpendel
+
+### &nbsp;
+
+\\(  -k \vec{x}(t) = m \cdot \ddot{\vec{x}}(t) \\)
+
+
+\\(   \ddot{\vec{x}}(t)   =  - \frac{k}{m} \cdot \vec{x}(t) \\)
+
+\\(   \ddot{\vec{x}}(t)   =  - \omega^2 \cdot \vec{x}(t) \\)
+
+--
+
+Annahme einer Lösung: 
+
+\\( \vec{x}(t) = e ^{\lambda \cdot t} \\)
+
+\\( \ddot{\vec{x}}(t) = \lambda^2 \cdot e ^{\lambda \cdot t} \\)
+
+einsetzen in DGl
+
+\\( \lambda^2 \cdot e ^{\lambda \cdot t} = - \omega^2 \cdot e ^{\lambda \cdot t} \\)
+
+\\( (\lambda^2 + \omega^2) \cdot e ^{\lambda \cdot t} = 0 \\)
+
+folglich
+
+\\( (\lambda^2 + \omega^2) = 0\\)
+
+\\( \lambda = i \omega \mbox{ oder } \lambda = -i \omega \\)
+
+allg. Lösung:
+
+\\( \vec{x}(t) = \vec{x}\_1(t) + \vec{x}\_2(t) = \frac{c\_1}{e^{i \omega t}}+ c\_2 \cdot e^{i \omega t} \\)
+
+\\( \vec{x}(t) = c\_1 \cdot \cos(\omega t) + c\_2 \cdot \sin(\omega t) \\)
+
+---
+
+### Federpendel
+
+[https://tube.geogebra.org/material/show/id/126500](https://tube.geogebra.org/material/show/id/126500)
+
+![federpendel](media/federpendel.png)
+
+---
+### gedämpftes Federpendel
+
+![federpendel_daempfung](media/federpendel_daempfung.png)
+
+--
+
+### DGL für ein gedämpfte Federpendel
+
+![fadenpendeldaempfung2](media/fadenpendeldaempfung2.png)
+
+
+--
+
+### Lagrange Formalismus für das Fadenpendel 
+
+\\(   m l^2 \ddot{\phi}(t) + mgl \sin(\phi)   =  0 \\)
+
+  nur numerisch lösbar !!!
+
+---
+
+### Fadenpendel Simulation
+
+[https://tube.geogebra.org/material/show/id/702](https://tube.geogebra.org/material/show/id/702)
+
+
+![fadenpendel](media/fadenpendel.png)
+
+---
+### Numerische Lösung  einer DGL 2. Ordnung
+
+
+[https://tube.geogebra.org/material/show/id/79803](https://tube.geogebra.org/material/show/id/79803)
+
+![dgl2](media/dgl2.png)
+
+---
+
+
+### GeoGebra
+### Anleitung
+#### zu Differentialgleichungen und Richtungsfelder
+
+#### &nbsp;
+
+- [http://wiki.geogebra.org/de/L%C3%B6seDgl_%28Befehl%29](http://wiki.geogebra.org/de/L%C3%B6seDgl_%28Befehl%29)
+- [http://wiki.geogebra.org/de/Richtungsfeld_%28Befehl%29](http://wiki.geogebra.org/de/Richtungsfeld_%28Befehl%29)
+- [Schwingungen und Wellen](https://tube.geogebra.org/material/show/id/71439)
+
 
 ---
 
@@ -683,11 +877,11 @@ Parabel: $  \overline{FP} = \overline{LP} $
         overview: true,
         slideNumber: true,
 
-        //width: 1024,
-          //height: 768,
+        width: 1024,
+        height: 768,
 
-          width: 1440,
-          height: 900,
+          //width: 1440,
+          //height: 900,
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
         transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
