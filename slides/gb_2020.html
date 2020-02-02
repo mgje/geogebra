@@ -206,12 +206,16 @@ Mit welcher Wahrscheinlichkeit erhält man bei 30 Münzwürfen zwischen 10 und 1
 
 ### Gerade finden
 
+Algebra Fenster
 ```
 E4 : Normalebene(A,g)
+
 S2k = (7,0,5)
 Pk = (7,10,5)
 hk : Gerade (S2k, Pk)
+
 G = Schneide (hk, E4)
+
 k : Gerade (G,A)
 
 ```
@@ -225,6 +229,8 @@ k : Gerade (G,A)
 
 CAS
 ```
+A := (5,7,2)
+B := (1,0,5)
 AP := Vektor (A, (0,0,z))
 BP := Vektor (B, (0,0,z))
 Skalarprodukt(AP,AP) = Skalarprodukt(BP,BP)
@@ -235,19 +241,110 @@ Löse($3,z)
 
 [Link zur Lösung](https://www.geogebra.org/m/jufxgakc)
 
+---
+
+### GPS-Problem
+
+Gesucht ein Punkt mit 3 vorgegebenen Abständen zu 3 Punkten A,B,C
+
+CAS
+```
+P:= Vektor((x,y,z))
+A:= Vektor((1,0,1))
+B:= Vektor((0,1,1))
+C:= Vektor((1,1,1))
+
+d:= 3/4
+
+Skalarprodukt(P-A,P-A)
+Skalarprodukt(P-A,P-A)
+Skalarprodukt(P-A,P-A)
+
+Löse({$6,$7,$8}{x,y,z})
+
+```
+[Link zur Lösung](https://www.geogebra.org/m/hjrvsmuz)
+
 
 
 ---
 ![](media/gb_a2_1.png)
 
---
+---
 ![](media/gb_a2_2.png)
 
---
+---
+
+### Fläche unter einer Funktion zwischen 2 Nullstellen
+
+### Steigung an der Stelle 0
+
+CAS
+```
+f(x):= -2/5 x^5 - 12/5 x^4 -26/5 x^3 - 24/5 x^2 -8/5 x
+
+Löse(f(x)=0)
+
+Integral(f(x)=0)
+
+w:=tan^(-1)(f'(0)) * 180/π
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/frybz9dp)
+
+---
 
 ![](media/gb_a2_3.png)
 
+
 ---
+
+### Schnittpunkt, Winkel 
+
+CAS
+```
+g(x):= -2.7x + 5.25
+
+p(x):= 1.6x^2 - 1.6x
+
+k(x):= 3x^3 - 3x^2 + 9/16x
+
+Schneide(g,k)
+
+s := k'(5/4)
+
+a1 := tan^-1(s) * 180/π
+
+a2 := tan^-1(-2.7) * 180/π
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/frybz9dp)
+
+---
+
+### Fläche des Vogels
+
+CAS
+```
+A1 := Integral(k(x)-p(x),0, 5/4)
+
+A2 := Integral(g(x)-p(x),5/4,3/2)
+
+A = A1 + A2
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/frybz9dp)
+---
+
+### gleiche Steigung an der Stelle 0
+
+CAS
+```
+p'(0)
+
+f'(0)
+```
 
 [Link zur Lösung](https://www.geogebra.org/m/frybz9dp)
 
@@ -260,35 +357,175 @@ Löse($3,z)
 
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dlMY9a-HSrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 [Link zur Lösung](https://www.geogebra.org/m/vzfbeejg)
 
 
 ---
 
-### Aufgabe 4
+### Nullstellen, Abstandfunktion , Extremwerte
 
+CAS
+```
+f(x):=6-(100/((x-4)^2*(x+4)^2))
+
+Löse(f(x)=0)
+
+Löse(f'(x)=-1)
+
+g(x):= sqrt((x-1.5)^2+(f(x)-4)^2)
+
+Extremum(g(x))
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/vzfbeejg)
+
+---
+
+#### Aufgabe 4
 ![](media/gb_a4.png)
 
 ---
 
 
+### Folgen, Summen
+
+
+CAS
+```
+n:= 2.4/0.2
+
+f(i):= 2.4 - i*0.2
+
+Summe(f(i),i,1,n-1)
+
+anzP:= 2*(n-1) + 1
+
+```
+
 [Link zur Lösung](https://www.geogebra.org/m/mzdfqthb)
 
 ---
 
+### Exponetialgleichung
 
+
+CAS
+```
+2.4 * 0.9^x = 0.5
+
+Löse(2.4 * 0.9^x = 0.5)
+
+N := 2 * floor( $2 ) + 1
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/mzdfqthb)
+
+---
+
+# Masse berechnen
+
+CAS
+```
+V(d) := 1/6 * pi * d^3
+
+Summe(V( 2.4 * 0.9^i),i,0,14)
+
+Vtot := 2 * $2 - V(2.4)
+
+mtot := Vtot * 2.7
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/mzdfqthb)
+
+
+---
+
+### Grösste Perle bestimmen
+
+CAS
+```
+Summe (x * 0.9^i, i, 0, 9) * 2 - x =31
+
+Löse($1)
+
+-> 2.5777
+
+Summe(2.5777 * 0.9^i, 0, 9) * 2 - 2.5777
+
+-> 31
+
+```
+
+
+---
 
 ![](media/gb_a5_1.png)
 
---
+
+---
+
 
 ![](media/gb_a5_2.png)
 
 ---
 
+### keine Kugel im 100 Feld  mit W < 0.01
+
+CAS
+```
+
+(1- 79/4200)^x = 0.01
+
+Löse($1)
+
+-> 242
+
+```
+
+
 
 
 [Link zur Lösung](https://www.geogebra.org/m/jht3hkbq)
+
+
+---
+
+### Mit 5 Würfen 230 Punkte
+
+CAS
+```
+# 2 * 100 + 3 * 10
+
+(79/4200)^2 * 0.3069^3 * nCr(5,2)
+
+
+# 2 * 100 + 2 * 5 + 20
+
+(79/4200)^2 * 0.5707^2 * 0.0836 * nCr(5,2) * nCr(3,1)
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/jht3hkbq)
+---
+
+### Bedingte Wahrscheinlichkeiten
+
+CAS
+```
+
+(n * 0.13 - n * 2/5 * 0.05) / (3/5 * n)
+
+(n * 2/5 * 0.05) / (n * 0.13)
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/rprrecsx)
 
 ----
 
@@ -300,27 +537,70 @@ Löse($3,z)
 ---
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CC6V6M7JxUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [Link zur Lösung](https://www.geogebra.org/m/sq3v5uu2)
 
 ---
+# Prüfungsumgebung
 
+---
+### Prüfungsmodus starten
 
-# Weitere Themen 
+![](media/pmodus.png)
+
+- Die Farbe der Werkzeugleiste ändert sich zu blau.
+- Der Prüfungstimer ist aktiviert und wird in der Werkzeugleiste angezeigt. 
+
 
 ---
 
-## Themen
+- Der ﻿ Prüfungsprotokoll Button wird in der Werkzeugleiste angezeigt und ermöglicht es dir jederzeit auf das Protokoll zuzugreifen. 
+- Die nicht verfügbaren Ansichten werden in der Werkzeugleiste angezeigt. 
+
+![](media/pruefung_run.png)
+---
+
+Während der Prüfung kannst du dir jederzeit das Prüfungsprotokoll ansehen, indem du in der Kopfzeile auf den   Prüfungsprotokoll Button klickst. 
+
+![](media/ExamLog.png)
+---
+### Prüfungmodus und Sicherheit
+
+Das Verlassen des Prüfungsmodus in irgendeiner Weise (z.B. Verlassen des Vollbildmodus, Wechseln zu einer anderen App, Starten einer anderen Software, ...) löst einen visuellen Alarm aus, der leicht zu erkennen ist und auch im Prüfungsprotokoll aufgezeichnet wird.
+
+ ![](media/alarm.png)
 
 
-- [Einstieg Geometrie ](#/26)
-- [Funktionen unter der Lupe](#/40)
-- [Computeralgebrasystem](#/46)
-- [Modellieren, Fermat-Punkt](#/55)
-- [GeoGebra Materialien](#/69)
-- [Physik und GeoGebra](#/82)
-- [Bewegung kommt ins Spiel](#/92)
-- [Kurven erkunden und verstehen](#/112)
-- [3D Geogebra](#/119)
+
+---
+### weitere Informationen
+https://www.geogebra.org/u/geogebra+docu+team
+![](media/doku.png)
+
+
+---
+
+## Weitere Themen
+
+
+- [Einstieg Geometrie ](#/44) 
+
+- [Funktionen unter der Lupe](#/57)
+
+- [Computeralgebrasystem](#/64)
+
+- [Modellieren, Fermat-Punkt](#/78)
+
+- [GeoGebra Materialien](#/88)
+
+- [Physik und GeoGebra](#/97)
+
+- [Bewegung kommt ins Spiel](#/110)
+
+- [Kurven erkunden und verstehen](#/130)
+
+- [3D Geogebra](#/137)
 
 ---
 
