@@ -227,6 +227,31 @@ k : Gerade (G,A)
 ### Gesucht Punkt auf z-Achse mit gleichem Abstand zu A,B 
 
 
+Algebra Fenster
+
+```
+r = 2.3
+xzE: y=0
+yzE: x=0
+za: Schneide(xzE,yzE)
+a: Kugel(A,r)
+b: Kugel(B,r)
+Schneide(a,za)
+Schneide(b,za)
+Abstand(E,H)
+```
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZnE4H6ytR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+[Link zur Lösung](https://www.geogebra.org/m/gjxetmb6)
+
+--
+
+### Gesucht Punkt auf z-Achse mit gleichem Abstand zu A,B 
+
+
 CAS
 ```
 A := (5,7,2)
@@ -241,7 +266,7 @@ Löse($3,z)
 
 [Link zur Lösung](https://www.geogebra.org/m/jufxgakc)
 
----
+--
 
 ### GPS-Problem
 
@@ -273,7 +298,29 @@ Löse({$6,$7,$8}{x,y,z})
 ---
 ![](media/gb_a2_2.png)
 
+
 ---
+### Fläche unter einer Funktion zwischen 2 Nullstellen
+
+### Steigung an der Stelle 0
+
+Algebra Fenster
+```
+f: -2/5 x^5 - 12/5 x^4 -26/5 x^3 - 24/5 x^2 -8/5 x
+
+g: y=0
+
+L: Schneide(f,g)
+
+Integral(f,-2,0)
+
+atan(f'(0)) 
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/fu4c7drx)
+
+--
 
 ### Fläche unter einer Funktion zwischen 2 Nullstellen
 
@@ -297,8 +344,31 @@ w:=tan^(-1)(f'(0)) * 180/π
 
 ![](media/gb_a2_3.png)
 
-
 ---
+
+### Schnittpunkt, Winkel 
+
+Algebra Fenster
+```
+g: -2.7x + 5.25
+
+p: 1.6x^2 - 1.6x
+
+k: 3x^3 - 3x^2 + 9/16*x
+
+Schneide(g,k)
+
+s: k'(5/4)
+
+atan(s)
+
+atan(-2.7)
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/fu4c7drx)
+
+
+--
 
 ### Schnittpunkt, Winkel 
 
@@ -308,7 +378,7 @@ g(x):= -2.7x + 5.25
 
 p(x):= 1.6x^2 - 1.6x
 
-k(x):= 3x^3 - 3x^2 + 9/16x
+k(x):= 3x^3 - 3x^2 + 9/16*x
 
 Schneide(g,k)
 
@@ -322,7 +392,21 @@ a2 := tan^-1(-2.7) * 180/π
 [Link zur Lösung](https://www.geogebra.org/m/frybz9dp)
 
 ---
+### Fläche des Vogels
 
+Algebra Fenster
+```
+A1: Integral(k-p,0, 5/4)
+
+A2: Integral(g-p,5/4,3/2)
+
+A = A1 + A2
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/fu4c7drx)
+
+
+--
 ### Fläche des Vogels
 
 CAS
@@ -339,14 +423,18 @@ A = A1 + A2
 
 ### gleiche Steigung an der Stelle 0
 
-CAS
+Algebra Fenster
 ```
-p'(0)
+h: Ableitung(p)
 
-f'(0)
+j: Ableitung(f)
+
+h(0) == j(0)
+
+
 ```
 
-[Link zur Lösung](https://www.geogebra.org/m/frybz9dp)
+[Link zur Lösung](https://www.geogebra.org/m/fu4c7drx)
 
 ---
 
@@ -571,6 +659,36 @@ Das Verlassen des Prüfungsmodus in irgendeiner Weise (z.B. Verlassen des Vollbi
 
  ![](media/alarm.png)
 
+---
+
+## Einsatz von Geogebra im Unterricht
+
+### Beispiel Parabel und Parameter
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2-KP0tkI-sA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+--
+
+## Funktion langsam zeichnen
+
+```
+LangsamesZeichnen(sin(x))
+```
+
+---
+
+## Integral Untersumme / Obersumme
+
+https://www.geogebra.org/m/U6BVhW53#material/psqv93s3
+
+---
+
+## von Daten zur Funktion
+
+
+
+[Anleitung für die grafische Darstellung von Tabellenwerten](http://www.math.uni-bremen.de/didaktik/ma/ralbers/Materialien/Vortragsmat/AnleitungMNU14.pdf)
 
 
 ---
