@@ -222,7 +222,31 @@ k : Gerade (G,A)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wqRm545Ob7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 ---
+
+### Gesucht Punkt auf z-Achse mit gleichem Abstand zu A,B 
+
+
+Algebra Fenster
+
+```
+xa: (0,0,0)+ t (0,0,1)
+C : (A+B)/2
+f : Strecke(A,B)
+p : Normalebene(C,f)
+Schneide(p,xa)
+```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_I_3M84gdB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+[Link zur Lösung](https://www.geogebra.org/m/mjn4nga8)
+
+--
+
+
+
 
 ### Gesucht Punkt auf z-Achse mit gleichem Abstand zu A,B 
 
@@ -443,7 +467,7 @@ h(0) == j(0)
 
 ![](media/gb_a3.png)
 
----
+--
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dlMY9a-HSrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -452,6 +476,33 @@ h(0) == j(0)
 
 
 ---
+
+### Nullstellen, Abstandfunktion , Extremwerte
+
+Algebra Fenster
+```
+f: 6-(100/((x-4)^2*(x+4)^2))
+
+L: Nullstellen(f)
+
+g: f' + 1
+
+N: Nullstellen(g)
+
+h: sqrt((x-1.5)^2+(f(x)-4)^2)
+
+Extremum(g(x))
+
+```
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0cthldXEWCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+[Link zur Lösung](https://www.geogebra.org/m/jpttkxqq)
+
+--
 
 ### Nullstellen, Abstandfunktion , Extremwerte
 
@@ -478,6 +529,32 @@ Extremum(g(x))
 
 ---
 
+### Folgen, Summen
+
+
+Algebra Fenster
+```
+
+d_0 = 2.4
+
+N = d_0 / 0.2 
+
+fn = Folge(d_0 - i * 0.2, i, 0, N-1)
+
+L1 = Summe(fn)
+
+Lk1 = l1 * 2 - d_0
+
+anzP = 2 * N - 1
+
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/cxhvthfu)
+
+
+
+--
 
 ### Folgen, Summen
 
@@ -498,6 +575,52 @@ anzP:= 2*(n-1) + 1
 
 ---
 
+### geometrische Folge
+
+
+Algebra Fenster
+```
+q = 0.9
+
+L2 = d_0 / (1-q)
+
+Lk2 = 2 * l2 - d_0
+
+
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/cxhvthfu)
+
+---
+
+### Exponetialgleichung
+
+$$
+2.4 \cdot 0.9^N = 0.5
+$$
+
+$$
+N \cdot \log(0.9) = \log(\frac{5}{24})
+$$
+
+
+Algebra Fenster
+```
+N3 = log(5/24) / log(0.9)
+
+# oder:
+
+gl1: 2.4 * 0.9^x = 0.5
+
+Löse(gl1)
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/cxhvthfu)
+
+--
+
 ### Exponetialgleichung
 
 
@@ -513,7 +636,7 @@ N := 2 * floor( $2 ) + 1
 
 [Link zur Lösung](https://www.geogebra.org/m/mzdfqthb)
 
----
+--
 
 # Masse berechnen
 
@@ -534,6 +657,53 @@ mtot := Vtot * 2.7
 
 ---
 
+### Grösste Perle bestimmen, algebraisch
+
+
+$$
+s_n = a_0 \cdot \frac{1-q^{n+1}}{1-q}
+$$
+
+$$
+31 = 2 \cdot s_n - a_0 
+$$
+
+
+$$
+a_0  = \frac{31}{ 2 \cdot \frac{1-q^{n+1}}{1-q} - 1}
+$$
+
+
+
+
+Algebra Fenster
+```
+
+a_0 = 31 / (2 (1-q^(n+1)) / (1-q) -1)
+
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/kvmdzv3y)
+
+---
+### Grösste Perle bestimmen, Approximation
+
+Algebra Fenster
+```
+d_0 = 1.971
+
+L4 = Summe(d_0 * 0.9^i, i, 0, 9)
+
+Lk4 = 2 * l4 - d_0
+
+# d_0 anpassen bis lk4 = 31
+
+```
+[Link zur Lösung](https://www.geogebra.org/m/kvmdzv3y)
+
+
+--
 ### Grösste Perle bestimmen
 
 CAS
@@ -565,6 +735,26 @@ Summe(2.5777 * 0.9^i, 0, 9) * 2 - 2.5777
 
 ### keine Kugel im 100 Feld  mit W < 0.01
 
+Algebra Fenster
+```
+
+f(x) = (1- 79/4200)^x
+
+g: y = 0.001
+
+Schneide(f,g)
+
+-> (242.522 , 0.01)
+
+```
+
+
+[Link zur Lösung](https://www.geogebra.org/m/a5auvqtz)
+
+--
+
+### keine Kugel im 100 Feld  mit W < 0.01
+
 CAS
 ```
 
@@ -578,11 +768,30 @@ Löse($1)
 
 
 
-
 [Link zur Lösung](https://www.geogebra.org/m/jht3hkbq)
 
 
 ---
+
+### Mit 5 Würfen 230 Punkte
+
+Algebra Fenster
+```
+# 2 * 100 + 3 * 10
+
+p_1 = nCr(5,2) * (79/4200)^2 * 0.3069^3  
+
+
+# 2 * 100 + 2 * 5 + 20
+
+p_2 = nCr(5,2) * nCr(3,1)* (79/4200)^2 * 0.5707^2 * 0.0836 
+
+```
+
+[Link zur Lösung](https://www.geogebra.org/m/a5auvqtz)
+
+
+--
 
 ### Mit 5 Würfen 230 Punkte
 
@@ -600,9 +809,9 @@ CAS
 ```
 
 [Link zur Lösung](https://www.geogebra.org/m/jht3hkbq)
----
+--
 
-### Bedingte Wahrscheinlichkeiten
+### Bedingte Wahrscheinlichkeit
 
 CAS
 ```
@@ -663,9 +872,11 @@ Das Verlassen des Prüfungsmodus in irgendeiner Weise (z.B. Verlassen des Vollbi
 
 ## Einsatz von Geogebra im Unterricht
 
-### Beispiel Parabel und Parameter
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2-KP0tkI-sA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+---
+### Parameter bei quadratischen Funktionen
+
+<iframe width="800" height="600" src="https://www.youtube.com/embed/2-KP0tkI-sA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 --
@@ -677,24 +888,118 @@ LangsamesZeichnen(sin(x))
 ```
 
 ---
+### Folgen und Reihen
 
-## Integral Untersumme / Obersumme
 
-https://www.geogebra.org/m/U6BVhW53#material/psqv93s3
+
+
+
+
+
+-[Folgen & Reihen, A. Lidner](https://www.geogebra.org/m/j2DrXFG9)
+
+
+---
+## lineare Gleichungsystemen
+
+
+![](media/gls_farbig.png)
+
+
+
+- [Beispiel](https://www.geogebra.org/m/krv4nwzp)
+
+- [lin LGS Christian Conradi](https://www.geogebra.org/m/GYAj6sUH)
+
+- [lin LGS mit 2 Variablen](https://www.geogebra.org/m/xth6GEcc)
+
+- [lin LGS & Matrizen-Rechnung](https://www.geogebra.org/m/BpqJ28eP)
+
+- [Systems of Three Linear Equations](https://www.geogebra.org/m/PNUefxFh)
+
+
+
 
 ---
 
-## von Daten zur Funktion
+### Einstieg in die Differenzialrechnung
+
+#### Funktionen unter der Lupe
+
+<small>H.-J. Eschenbroich </small>
+
+[https://www.geogebra.org/m/QxeVkgpf](https://www.geogebra.org/m/QxeVkgpf)
+
+![Steigung_mit_FunktionenLupe](media/Steigung_mit_FunktionenLupe.png)
+
+---
+
+## Einstieg Integralrechnung 
+### Untersumme / Obersumme
+
+$$
+\sum \mapsto \int
+$$
+
+[Der Integrator, H.-J. Eschenbroich](https://www.geogebra.org/m/gfFc49CN)
+
+---
+
+## Mit Daten arbeiten
 
 
 
 [Anleitung für die grafische Darstellung von Tabellenwerten](http://www.math.uni-bremen.de/didaktik/ma/ralbers/Materialien/Vortragsmat/AnleitungMNU14.pdf)
+
+---
+## Stochastik
+
+
+- [Wahrscheinlichkeitsrechnung, W. Wengler](https://www.geogebra.org/m/z3sHjGhR)
+
+- [Wahrscheinlichkeitsrechnung, A. Lindner](https://www.geogebra.org/m/AytaSakt)
+
+- [Stochastik II](https://www.geogebra.org/m/dmvzbdqr)
+
+- [Beispiel, R. Schmidt](https://www.geogebra.org/m/K5b6j83T)
+
+
+
+
+
+---
+### Potenzial von GeoGebra 
+
+- Verknüpfung Algebra und Geometrie
+
+  - Punkte werden als Koordinaten repräsentiert
+  - Geraden durch Geradengleichungen
+  - Kurven durch Kegelschnitte 
+
+- Durch das Zusammenspiel zwischen Algebra-Fenster und Grafik lassen sich Funktionen erforschen
+
+
+---
+Fazit
+
+- GeoGebra eignet sich als Vorzeige Werkzeug für die Lehrperson
+- Beispiele können den SuS einfach zur Verfügung gestellt werden
+- GeoGebra kann als Rechner verwendet werden
+
+wichtig! Es geht nicht darum, dass die SuS GeoGebra Spezialistinnen werden. GeoGebra ist lediglich ein Werkzeug !
+
+- Die Fachschaft hat zu bestimmen, in welcher Form GeoGebra in Prüfungen eingesetzt werden kann. 
+
+- An der Universität und an der FHNW sind keine elektronischen Prüfungen mit GeoGebra geplant 
+
 
 
 ---
 ### weitere Informationen
 https://www.geogebra.org/u/geogebra+docu+team
 ![](media/doku.png)
+
+- [Schulmathematik Analysis, A. Lindner](https://www.geogebra.org/m/KpDGwV7B)
 
 
 ---
