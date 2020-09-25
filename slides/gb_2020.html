@@ -201,7 +201,7 @@ Mit welcher Wahrscheinlichkeit erhält man bei 30 Münzwürfen zwischen 10 und 1
 ### Gerade finden
 
 Algebra Fenster
-```
+```ocaml
 E4 : Normalebene(A,g)
 
 S2k = (7,0,5)
@@ -224,7 +224,7 @@ Gesucht Punkt auf z-Achse mit gleichem Abstand zu A,B
 
 Algebra Fenster
 
-```
+```ocaml
 xa: (0,0,0)+ t (0,0,1)
 C : (A+B)/2
 f : Strecke(A,B)
@@ -247,7 +247,7 @@ Gesucht Punkt auf z-Achse mit gleichem Abstand zu A,B
 
 Algebra Fenster
 
-```
+```ocaml
 r = 2.3
 xzE: y=0
 yzE: x=0
@@ -271,7 +271,7 @@ Gesucht Punkt auf z-Achse mit gleichem Abstand zu A,B
 
 
 CAS
-```apache
+```ocaml
 A := (5,7,2)
 B := (1,0,5)
 AP := Vektor (A, (0,0,z))
@@ -323,7 +323,7 @@ Löse({$6,$7,$8}{x,y,z})
 ### Steigung an der Stelle 0
 
 Algebra Fenster
-```bash
+```ocaml
 f: -2/5 x^5 - 12/5 x^4 -26/5 x^3 - 24/5 x^2 -8/5 x
 
 g: y=0
@@ -345,7 +345,7 @@ atan(f'(0))
 ### Steigung an der Stelle 0
 
 CAS
-```
+```ocaml
 f(x):= -2/5 x^5 - 12/5 x^4 -26/5 x^3 - 24/5 x^2 -8/5 x
 
 Löse(f(x)=0)
@@ -367,7 +367,7 @@ w:=tan^(-1)(f'(0)) * 180/π
 ### Schnittpunkt, Winkel 
 
 Algebra Fenster
-```
+```ocaml
 g: -2.7x + 5.25
 
 p: 1.6x^2 - 1.6x
@@ -391,7 +391,7 @@ atan(-2.7)
 ### Schnittpunkt, Winkel 
 
 CAS
-```
+```ocaml
 g(x):= -2.7x + 5.25
 
 p(x):= 1.6x^2 - 1.6x
@@ -413,7 +413,7 @@ a2 := tan^-1(-2.7) * 180/π
 ### Fläche des Vogels
 
 Algebra Fenster
-```
+```ocaml
 A1: Integral(k-p,0, 5/4)
 
 A2: Integral(g-p,5/4,3/2)
@@ -428,7 +428,7 @@ A = A1 + A2
 ### Fläche des Vogels
 
 CAS
-```
+```ocaml
 A1 := Integral(k(x)-p(x),0, 5/4)
 
 A2 := Integral(g(x)-p(x),5/4,3/2)
@@ -442,7 +442,7 @@ A = A1 + A2
 ### gleiche Steigung an der Stelle 0
 
 Algebra Fenster
-```
+```ocaml
 h: Ableitung(p)
 
 j: Ableitung(f)
@@ -474,7 +474,7 @@ h(0) == j(0)
 ### Nullstellen, Abstandfunktion , Extremwerte
 
 Algebra Fenster
-```
+```ocaml
 f: 6-(100/((x-4)^2*(x+4)^2))
 
 L: Nullstellen(f)
@@ -501,7 +501,7 @@ Extremum(g(x))
 ### Nullstellen, Abstandfunktion , Extremwerte
 
 CAS
-```
+```ocaml
 f(x):=6-(100/((x-4)^2*(x+4)^2))
 
 Löse(f(x)=0)
@@ -527,7 +527,7 @@ Extremum(g(x))
 
 
 Algebra Fenster
-```
+```ocaml
 
 d_0 = 2.4
 
@@ -542,7 +542,7 @@ Lk1 = l1 * 2 - d_0
 anzP = 2 * N - 1
 
 
-```
+```ocaml
 
 [Link zur Lösung](https://www.geogebra.org/m/cxhvthfu)
 
@@ -554,7 +554,7 @@ anzP = 2 * N - 1
 
 
 CAS
-```
+```ocaml
 n:= 2.4/0.2
 
 f(i):= 2.4 - i*0.2
@@ -573,7 +573,7 @@ anzP:= 2*(n-1) + 1
 
 
 Algebra Fenster
-```
+```ocaml
 q = 0.9
 
 L2 = d_0 / (1-q)
@@ -600,7 +600,7 @@ $$
 
 
 Algebra Fenster
-```
+```ocaml
 N3 = log(5/24) / log(0.9)
 
 # oder:
@@ -619,7 +619,7 @@ Löse(gl1)
 
 
 CAS
-```
+```ocaml
 2.4 * 0.9^x = 0.5
 
 Löse(2.4 * 0.9^x = 0.5)
@@ -635,7 +635,7 @@ N := 2 * floor( $2 ) + 1
 # Masse berechnen
 
 CAS
-```
+```ocaml
 V(d) := 1/6 * pi * d^3
 
 Summe(V( 2.4 * 0.9^i),i,0,14)
@@ -671,7 +671,7 @@ $$
 
 
 Algebra Fenster
-```
+```ocaml
 
 a_0 = 31 / (2 (1-q^(n+1)) / (1-q) -1)
 
@@ -684,7 +684,7 @@ a_0 = 31 / (2 (1-q^(n+1)) / (1-q) -1)
 ### Grösste Perle bestimmen, Approximation
 
 Algebra Fenster
-```
+```ocaml
 d_0 = 1.971
 
 L4 = Summe(d_0 * 0.9^i, i, 0, 9)
@@ -701,7 +701,7 @@ Lk4 = 2 * l4 - d_0
 ### Grösste Perle bestimmen
 
 CAS
-```
+```ocaml
 Summe (x * 0.9^i, i, 0, 9) * 2 - x =31
 
 Löse($1)
@@ -730,7 +730,7 @@ Summe(2.5777 * 0.9^i, 0, 9) * 2 - 2.5777
 ### keine Kugel im 100 Feld  mit W < 0.01
 
 Algebra Fenster
-```
+```ocaml
 
 f(x) = (1- 79/4200)^x
 
@@ -750,7 +750,7 @@ Schneide(f,g)
 ### keine Kugel im 100 Feld  mit W < 0.01
 
 CAS
-```
+```ocaml
 
 (1- 79/4200)^x = 0.01
 
@@ -770,7 +770,7 @@ Löse($1)
 ### Mit 5 Würfen 230 Punkte
 
 Algebra Fenster
-```
+```ocaml
 # 2 * 100 + 3 * 10
 
 p_1 = nCr(5,2) * (79/4200)^2 * 0.3069^3  
@@ -790,7 +790,7 @@ p_2 = nCr(5,2) * nCr(3,1)* (79/4200)^2 * 0.5707^2 * 0.0836
 ### Mit 5 Würfen 230 Punkte
 
 CAS
-```
+```ocaml
 # 2 * 100 + 3 * 10
 
 (79/4200)^2 * 0.3069^3 * nCr(5,2)
@@ -808,7 +808,7 @@ CAS
 ### Bedingte Wahrscheinlichkeit
 
 CAS
-```
+```ocaml
 
 (n * 0.13 - n * 2/5 * 0.05) / (3/5 * n)
 
@@ -880,7 +880,7 @@ Matthew D. Salomone, Bridgewater State University, Massachusetts
 
 ## Funktion langsam zeichnen
 
-```
+```ocaml
 LangsamesZeichnen(sin(x))
 ```
 
@@ -1292,7 +1292,7 @@ Beweglicher Punkt auf der x-Achse
 - entsprechender Punkt auf einer Funktion
 
 
-```
+```ocaml
 f(x) =x^2*sin(x^2)
 X_0 =Punkt[y=0]
 P =(x(X_0),f(x(X_0)))
@@ -1320,7 +1320,7 @@ P =(x(X_0),f(x(X_0)))
 --
 ### Kurvenschar - Folge von Funktionen
 
-```apache
+```ocaml
 
 f=Folge[(1/i) sin(x i),i,1,N]
 
@@ -1706,7 +1706,7 @@ nötig:
 
 
 
-```apache
+```ocaml
 A = (1, 1)
 
 f(x, y) = sin(x) cos(y)
