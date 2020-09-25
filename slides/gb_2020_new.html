@@ -2404,6 +2404,7 @@ Finde einen maximalen Zylinder in einer Kugel
 		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/search/search.js"></script>
 		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/markdown/markdown.js"></script>
 		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/highlight/highlight.js"></script>
+		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/math/math.js"></script>
 
 		<script>
 
@@ -2416,10 +2417,18 @@ Finde einen maximalen Zylinder in einer Kugel
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+				math: {
+      			mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+      				config: 'TeX-AMS_HTML-full',
+      			// pass other options into `MathJax.Hub.Config()`
+      				TeX: { Macros: { RR: "{\\bf R}" } }
+    			},
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight,RevealMath]
 			});
 
 		</script>
+
+
 
    <!--  <script>
 
