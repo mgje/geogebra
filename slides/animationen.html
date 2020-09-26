@@ -21,19 +21,16 @@
 			}
 		</script>
 
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/reveal.min.css">
-		<link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/theme/mw2.css" id="theme">
+		 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    	<link rel="stylesheet" href="https://mgje.github.io/geogebra/reveal2020/dist/reveal.css">
+    	<link rel="stylesheet" href="https://mgje.github.io/geogebra/reveal2020/dist/theme/blood.css" id="theme">
+
 
 
     <!-- Code syntax highlighting -->
-    <link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/lib/css/zenburn.css">
+    <link rel="stylesheet" href="https://mgje.github.io/geogebra/reveal2020/plugin/highlight/monokai.css">
 
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
 
 		<!--[if lt IE 9]>
 		<script src="https://mgje.github.io/presentations/reveal2015/lib/js/html5shiv.js"></script>
@@ -561,46 +558,33 @@ Mechanical creation of a perspective image by Albrecht Dürer
 
 		</div>
 
-		<script src="https://mgje.github.io/presentations/reveal2015/lib/js/head.min.js"></script>
-		<script src="https://mgje.github.io/presentations/reveal2015/js/reveal.js"></script>
+   <!--  <script src="https://mgje.github.io/geogebra/reveal2020/lib/js/head.min.js"></script> -->
+    <script src="https://mgje.github.io/geogebra/reveal2020/dist/reveal.js"></script>
+    <script src="https://mgje.github.io/geogebra/reveal2020/plugin/zoom/zoom.js"></script>
+		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/notes/notes.js"></script>
+		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/search/search.js"></script>
+		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/markdown/markdown.js"></script>
+		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/highlight/highlight.js"></script>
+		<script src="https://mgje.github.io/geogebra/reveal2020/plugin/math/math.js"></script>
 
 		<script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal#configuration
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				history: true,
 				center: true,
-				keyboard: true,
-				overview: true,
-				slideNumber: true,
+				hash: true,
 
-				//width: 1024,
-    			//height: 768,
-
-    			width: 1440,
-    			height: 900,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				//parallaxBackgroundSize: '2100px 900px',
-				parallaxBackgroundSize: '2100px 900px',
-
-				// Optional libraries used to extend on reveal
-				dependencies: [
-					{ src: 'https://mgje.github.io/presentations/reveal2015/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/math/math.js', async: true }
-				]
+				// Learn about plugins: https://revealjs.com/plugins/
+				math: {
+      			mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+      				config: 'TeX-AMS_HTML-full',
+      			// pass other options into `MathJax.Hub.Config()`
+      				TeX: { Macros: { RR: "{\\bf R}" } }
+    			},
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight,RevealMath]
 			});
 
 		</script>
