@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+		<title>Animationen erstellen</title>
+
+		<meta name="description" content="TODO">
+		<meta name="author" content="Martin Guggisberg">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- change to https -->
+		<script>
+			if (window.location.host.indexOf('github.io') > -1 && window.location.protocol != "https:"){
+    			window.location.protocol = "https";
+			}
+		</script>
+
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/reveal.min.css">
+		<link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/theme/mw2.css" id="theme">
+
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/lib/css/zenburn.css">
+
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="https://mgje.github.io/presentations/reveal2015/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="https://mgje.github.io/presentations/reveal2015/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+				
+<!-- Einleitung -->
+<section data-markdown data-separator="---" data-separator-vertical="--" data-background="#FFFFFF">
+<script type="text/template">
+### Animationen erstellen
+
+#### mit Hilfe von GeoGebra
+<br>
+<p style="background-color:#81BABE">
+![banner](media/banner-geogebra.png)
+</p>
+<br>
+<br>
+##### Martin Guggisberg <br>
+
+
+---
+## Geogebra Institute 
+
+### PH FHNW Schweiz
+
+[https://www.geogebra.org/institutes](https://www.geogebra.org/institutes)
+
+
+![media/institutes.png](media/institutes.png)
+
+
+
+---
+## Agenda
+
+<br>
+<br>
+
+
+1. Open Source Software Geogebra 
+- Tutorial I: Animation erstellen
+- Beispiele von GeoGebraTube
+- Tutorial II: Rosenkurven (Rosette)
+- Bonus Track
+	- Piratenaufgabe
+	- Parallax Effekte
+
+---
+
+# Geogebra
+
+---
+
+
+# Geogebra
+
+- Beginn der Entwicklung: 2001 
+- Markus Hohenwarter, Universität Salzburg
+- Zunächst: 
+	- Algebra 
+	- Geometrie
+- Erweitert durch
+	- Computeralgebrasystem
+	- Tabellenkalkulation
+	- 3D-Geometrie
+	- Statistik
+- Neu auch: Geogebra-Tube: Plattform für Materialien
+
+
+---
+
+## [https://www.geogebra.org/](https://www.geogebra.org/)
+
+![Startseite](media/geogebraStart.png)
+
+
+
+---
+
+### 1. Möglichkeit
+### Geogebra installieren
+
+
+![Installation](media/geoinstallation.png)
+
+[https://www.geogebra.org/download](https://www.geogebra.org/download)
+---
+# Version 5 
+
+- CAS neue Version
+- 3D
+- Zusammenspiel mit GeoGebraTube
+- Unterschied Mobile und Desktop
+
+---
+# Version 6
+
+- Neues Benutzerinterface
+- Gleichungseditor
+- Neues 3D Rendering
+
+---
+### 2. Möglichkeit 
+### Direkt im Browser arbeiten
+
+![Installation](media/geogebrabrowser.png)
+
+[https://www.geogebra.org](https://www.geogebra.org)
+
+
+---
+
+Geogebra Materialien direkt nutzen
+
+
+![tube-geogebra.png](media/tube-geogebra.png)
+
+---
+
+## Teilen oder Kopieren
+
+Verwenden der Dateien, verändern der Dateien, Geogebra lernen.
+
+Und schliesslich: selbst Teilen
+
+--
+### GeoGebra Gruppen
+
+[www.geogebra.org/groups](https://www.geogebra.org/groups) bietet Ihnen einen einfachen Weg um bestehenden Gruppen beizutreten.
+
+![geogroup](media/geogroup.png)
+
+
+
+---
+
+### Lernvideos [YouTube Channel](https://www.youtube.com/watch?v=m_v9hKFlOpw)
+
+
+![YouTube](media/youtube.png)
+
+
+--
+
+### Neuigkeiten zu GeoGebra
+
+Twitter: [@geogebra](https://twitter.com/geogebra)
+
+![@geogebra](media/twittergeogebra.png)
+
+---
+
+# Animationen
+
+---
+### 1. Beispiel: 
+
+
+<br>
+
+### Was ist $\pi$ ?
+
+
+<br>
+
+Demo: [https://tube.geogebra.org/student/m19325](https://tube.geogebra.org/student/m19325)
+---
+
+# Animation 
+
+# selbst erstellen
+
+---
+### Bild entlang einer Kurve bewegen
+
+1. Bild einfügen
+
+- Kurve defineren
+
+- Beweglicher Punkt auf der Kurve festlegen
+
+- Bild mit beweglichen Punkt verknüpfen
+
+- Im Internet teilen
+---
+
+### Bild einfügen
+
+![Grumpy](media/grumpy2.png)
+
+---
+
+### Bild mit Drag u Drop importieren
+
+![Grumpy](media/geogebra-grumpy.png)
+
+---
+
+### Kurve definieren
+
+$x \mapsto \sin(x)$
+
+![sin-grump](media/sin-grump.png)
+---
+
+### Beweglicher Punkt auf der Kurve
+
+![Grumy Punkt](media/Grumpy_Punkt.png)
+
+---
+### Bild mit beweglichen Punkt verknüpfen
+
+
+![Eigschaften](media/Eigenschaftbild.png)
+
+---
+
+<video width="1012" height="720" data-autoplay controls>
+	    <source data-src="media/movies/grumpy.m4v" type="video/mp4" />
+	    <source data-src="media/movies/grumpy.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+
+[https://tube.geogebra.org/material/show/id/1329899](https://tube.geogebra.org/material/show/id/1329899)
+---
+
+<video  data-autoplay controls>
+	    <source data-src="media/movies/grumpycat.m4v" type="video/mp4" />
+	    <source data-src="media/movies/grumpycat.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+
+---
+# Beispiele aus der 
+
+# Kinematik
+
+Bewegung eines Massenpunkts
+---
+## Animieren von einfachen Bewegungen
+
+- Freier Fall ohne Reibung [Link](https://tube.geogebra.org/material/show/id/122795)
+- Angry Bird Physik [Link](https://tube.geogebra.org/material/show/id/147050)
+- Schiefer Wurf [Link](http://dmentrard.free.fr/GEOGEBRA/Sciences/Physique/Dynamique/Tirparabol.html)
+- Harmonische Schwingung [Link](http://dmentrard.free.fr/GEOGEBRA/Sciences/Physique/Statique/Oscillation.html)
+
+---
+### Animations Beispiele
+
+* [Kochkurve](https://tube.geogebra.org/m/35989)
+* [Kreisanimation 1](https://tube.geogebra.org/b/72373#material/67729), [Kreisanimation 2](https://tube.geogebra.org/m/67982)
+* [Euler Spirale](https://tube.geogebra.org/m/59746), [Euler Spirale 2](https://tube.geogebra.org/m/59768)
+* [Kreissektoren wild](https://tube.geogebra.org/m/84754)
+* [Gelenkanimation](https://tube.geogebra.org/m/693273)
+* [Fünfeck Spirale](https://tube.geogebra.org/m/84748)
+* [Sechseck Spirale](https://tube.geogebra.org/m/84744)
+* [Beweis Pythagoras](https://tube.geogebra.org/m/8299)
+* [Kollektiv Bewegungen](https://tube.geogebra.org/m/619265)
+* [Zweispalt Experiment](https://tube.geogebra.org/m/59307)
+* [Springender Ball](https://tube.geogebra.org/m/142)
+--
+### Math Perlen
+* [http://www.mathrecreation.com/](http://www.mathrecreation.com/)
+* [TED Symmetry](http://www.ted.com/talks/marcus_du_sautoy_symmetry_reality_s_riddle.html)
+---
+### Animaiton einer Rose
+
+![Rose](https://upload.wikimedia.org/wikipedia/commons/a/a1/Foucault_pendulum_animated.gif)
+
+[Web Tutorial (engl)](http://mathandmultimedia.com/2010/09/10/geogebra-tutorial-29-animation-roses-radian/)
+---
+
+### Animationsplan
+
+1. Erstellen eines äusseren Kreises
+2. Ein Punkt B läuft auf dem äusseren Kreis
+3. s sei die Strecke vom Zentrum zu B
+4. Erstelle einen inneren Kreis 
+5. Schneide den Kreis mit der Strecke
+6. Verändere den Radius des inneren Kreises
+7. Zeichne die Spur des Schnittpunktes
+
+
+---
+### Nullpunkt / Zentrum festlegen
+
+* Mit Punktwerkzeug auf den Achssenschnittpunkt klicken
+
+* oder die Koordinaten 
+
+```apache
+(0,0)
+```
+
+in der Eigabezeile eintragen
+
+---
+### Kreis mit Radius 1 um A
+
+Eingabe:
+
+```apache
+Kreis[A, 1]
+```
+
+<br>
+
+
+### Punkt B bei (1,0)
+
+Eingabe: 
+
+```apache
+B = (1,0)
+```
+
+
+---
+
+Punkt B rotieren um d°
+
+Eingabe: 
+
+```apache
+Drehe[B, d, A]
+```
+
+<br>
+Strecke AB'
+
+Eingabe: 
+
+```apache
+Strecke[A, B']
+```
+
+<br>
+
+zweiter Kreis
+
+
+Eingabe: 
+
+```apache
+Kreis[A, r]
+```
+---
+### Einstellungen Schieberegler anpassen
+
+![rose2](media/rose2.png)
+
+
+<br>
+
+schneiden
+
+---
+
+Eingabe: 
+
+```apache
+Schneide[e, a]
+```
+
+---
+
+### Spur einschalten und Animation Starten
+
+![Rosette3](media/Rosette3.png)
+
+[https://tube.geogebra.org/material/show/id/1333815](https://tube.geogebra.org/material/show/id/1333815)
+
+---
+
+![Rose](media/Rose.png)
+
+$$ r = \cos(\phi \cdot n/d ) $$
+
+[https://tube.geogebra.org/material/show/id/118656](https://tube.geogebra.org/material/show/id/118656)
+
+---
+
+#  Vielen Dank
+
+- Bonus Track
+	- Piratenaufgabe
+	- Parallax Effekte
+	- Wo ist der beste Ort ... ?
+
+---
+
+#Piraten-
+#aufgabe
+
+---
+
+![Piratenaufgabe](media/Piratenaufgabe.png)
+
+
+---
+
+![Piratenapplet](media/Piratenapplet.png)
+
+
+[Link auf GeoGebraTube](https://tube.geogebra.org/material/show/id/268433)
+---
+## Bewegungen simulieren
+
+<br>
+
+x,y-Position als Funktion von t
+
+<br>
+
+```apache
+t = 0.0
+P = (t,sin(t))
+```
+---
+
+<video width="980" height="470" data-autoplay controls>
+        <source data-src="media/movies/bewegterpunkt.m4v" type="video/mp4" />
+        <source data-src="media/movies/bewegterpunkt.webm" type="video/webm" />
+        Your browser does not support the <code>video</code> element.
+</video>
+
+---
+
+### Gekoppelte Kreisbewegungen
+
+\\( \vec{P}(t) = \begin{pmatrix} r\_1 \cdot \cos(t)  \\\\ r\_1 \cdot \sin(t)  \end{pmatrix} \\)
+
+<br>
+<br>
+
+\\( \vec{Q}(t) = \begin{pmatrix} x(P) \cdot r\_2 \cdot \cos(v\_{rel} \cdot t)  \\\\y(P) \cdot r\_2 \cdot \sin(v\_{rel} \cdot t)  \end{pmatrix} \\)
+
+
+---
+### Gekoppelte Kreisbewegungen
+
+![Kreisbewegung](media/Kreisbewegung.png)
+
+
+[https://tube.geogebra.org/student/m921873](https://tube.geogebra.org/student/m921873)
+
+---
+## Zentralprojektion 
+###& 
+##Parallax Effekte
+---
+## Parallax Effekte (Werbung)
+<video width="1280" height="720" data-autoplay controls>
+	    <source data-src="https://mgje.github.io/presentations/Budapest2014/media/movies/Parallaxe.mp4" type="video/mp4" />
+	    <source data-src="https://mgje.github.io/presentations/Budapest2014/media/movies/Parallaxe.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+---
+
+Modellierung eines perspektivischen
+
+Abbildungssystems mit 
+
+
+---
+![Dürer](media/durer1.gif)
+
+[Link](http://www.uh.edu/engines/epi138.htm)
+Mechanical creation of a perspective image by Albrecht Dürer
+
+---
+### perspektivische Abbildung <small> Quader auf Ebene</small>
+<video width="1012" height="720" data-autoplay controls>
+	    <source data-src="https://mgje.github.io/LinAlg/slides/media/movies/ZentralprojektionBox.m4v" type="video/mp4" />
+	    <source data-src="https://mgje.github.io/LinAlg/slides/media/movies/ZentralprojektionBox.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+---
+### Zentralprojektion <small>auf Ebene normal zur Z-Achse mit Brennweite f</small>
+<video width="1012" height="720" data-autoplay controls>
+	    <source src="https://mgje.github.io/LinAlg/slides/media/movies/Zentralprojektion_Tetraeder.m4v" type="video/mp4" />
+	    <source src="https://mgje.github.io/LinAlg/slides/
+	    media/movies/Zentralprojektion_Tetraeder.webm" type="video/webm" />
+		Your browser does not support the <code>video</code> element.
+</video>
+
+---
+### Zentralprojektion 
+
+
+![Zentralprojektion](media/Zentralprojektion.png)
+
+[Link auf GeoGebraTube](https://tube.geogebra.org/student/m119327)
+
+---
+## Zentralprojektion im Kino
+
+
+---
+### Ausschnitt Mission Impossible 4
+<video width="960" height="540" data-autoplay controls>
+	    <source src="https://mgje.github.io/presentations/Budapest2014/media/movies/MIP2.m4v" type="video/mp4" />
+	    <source src="https://mgje.github.io/presentations/Budapest2014/media/movies/MIP.webm" type="video/webm" />
+	    <source src="https://mgje.github.io/presentations/Budapest2014/media/movies/MIP.ogv" type="video/ogg" />
+		Your browser does not support the <code>video</code> element.
+</video>
+---
+![MIP](media/MIP.png)
+
+[Link GeoGebraTube](https://tube.geogebra.org/material/show/id/120897)
+</script>
+</section>
+
+
+<!-- THE END -->
+			</div>
+
+		</div>
+
+		<script src="https://mgje.github.io/presentations/reveal2015/lib/js/head.min.js"></script>
+		<script src="https://mgje.github.io/presentations/reveal2015/js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				keyboard: true,
+				overview: true,
+				slideNumber: true,
+
+				//width: 1024,
+    			//height: 768,
+
+    			width: 1440,
+    			height: 900,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				//parallaxBackgroundSize: '2100px 900px',
+				parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal
+				dependencies: [
+					{ src: 'https://mgje.github.io/presentations/reveal2015/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'https://mgje.github.io/presentations/reveal2015/plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
